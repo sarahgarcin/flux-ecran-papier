@@ -2,6 +2,7 @@
 $(document).ready(function(){
 	
 // -------- Variables --------------
+	//entrez votre access token ici
 	var accessToken = "ACCESS TOKEN";
 
 // -------- Initialisation des function --------------
