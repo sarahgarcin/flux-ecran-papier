@@ -12,21 +12,20 @@ $(document).ready(function(){
 			success: function (data) { 
 				$.each( data.event, function( i, item ) { // Itère à travers toutes les valeurs du tableaux de données
 					var recherche = item.query.query_text;
-					$('.google .google-content ul').append("<li>"+recherche+"</li>");
-					// $.each(item.query.id, function(a, id){
-					// 	//console.log(id.timestamp_usec);
-					// 	var timestamp = id.timestamp_usec.slice(0,-6);;
-					// 	var formatTimestamp = parseInt(timestamp);
-					// 	console.log(new Date(formatTimestamp));
-					// 	// var date = new Date(formatTimestamp);
-					// 	// var day = date.getDay();
-					// 	// var month = date.getMonth();
-					// 	// var year = date.getFullYear();
-					// 	// var hours = date.getHours();
-					// 	// var minutes = "0" + date.getMinutes();
-					// 	// var formatDate = day+"/"+month + " à " + hours + ':' + minutes.substr(-2);
-					// 	// console.log(year);
-					// });
+					var formatDate = 0;
+					$.each(item.query.id, function(a, id){
+						var timestamp = id.timestamp_usec.slice(0,-3);;
+						var formatTimestamp = parseInt(timestamp);
+						console.log(new Date(formatTimestamp));
+						var date = new Date(formatTimestamp);
+						var day = date.getUTCDate();;
+						var month = date.getUTCMonth() + 1;
+						var year = date.getFullYear();
+						var hours = date.getHours();
+						var minutes = "0" + date.getMinutes();
+						formatDate = day+"/"+month+"/"+year + " à " + hours + ':' + minutes.substr(-2);
+					});
+					$('.google .google-content ul').append("<li class='data-3 colonne'>"+recherche+"<h5>"+formatDate+"</h5></li>");
 				});
 			},
 			error: function() { alert('Failed!'); },
