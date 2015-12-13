@@ -2,8 +2,8 @@
 $(document).ready(function(){
 	
 // -------- Variables --------------
-	//entrez votre access token ici
-	var apiKey = "sh4ghv85zbjjbrsfbykvtwbr";
+	//entrez votre Api Key ici
+	// var apiKey = "API KEY";
 
 // -------- Initialisation des function --------------
 
