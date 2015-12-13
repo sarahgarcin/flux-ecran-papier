@@ -7,7 +7,7 @@ $(document).ready(function(){
 	function getVideos(){
 		$.ajax({ 
 			type: 'GET', 
-			url: "files/youtube.json", //url de récupération du json instagram
+			url: "files/name.json", //path du fichier json
 			dataType: 'json',
 			success: function (data) { 
 				$.each(data, function( i, item ) { // Itère à travers toutes les valeurs du tableaux de données

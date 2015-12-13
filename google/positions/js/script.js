@@ -9,7 +9,7 @@ $(document).ready(function(){
 	function getSearch(callback){
 		$.ajax({ 
 			type: 'GET', 
-			url: "files/positions.json", //url de récupération du json instagram
+			url: "files/name.json", //path du fichier json
 			dataType: 'json',
 			success: function (data) { 
 				for(var i=0; i<20; i++){
