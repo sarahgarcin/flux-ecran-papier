@@ -5,5 +5,8 @@ Liste d'outils et bouts de code pouvant servir au passage entre la version écra
 Créer une feuille de style spécifique à l'impression  
 <http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/>
 
-## Phantom JS
+## Phantom JS  
+Transformer une page web en PDF  
+<http://www.splitfire.fr/blog/article/generer-vos-pdf-avec-phantomjs>
+<http://phantomjs.org/screen-capture.html>
 
