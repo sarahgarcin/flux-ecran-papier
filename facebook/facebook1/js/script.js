@@ -59,24 +59,24 @@ $(document).ready(function(){
 				//console.log(data);
 				$.each( data.data, function( i, item ) { // Itère à travers toutes les valeurs du tableaux de données
 					console.log(item);
-					// var imageUrl;
-					// var from = item.from.name;
-					// var time = item.created_time;
-					// var adress;
-					// if(item.place){
-					// 	var place = item.place.name;
-					// 	var city = item.place.location.city;
-					// 	var street = item.place.location.street;
-					// 	adress = place + ", " + street +", " + city;
-					// }
-					// else{
-					// 	adress = "Pas d'adresse pour cette image";
-					// }
-					// $.each( item.images, function(a, image) {
-					// 	imageUrl = image.source;
-					// });
-					// $("." + colonne)
-					// .append('<li class="data-2 colonne"><img src="'+imageUrl+'"><span>'+adress+'</span><p>Posté par '+from+'</p><p>'+time+'</p></li>');
+					var imageUrl;
+					var from = item.from.name;
+					var time = item.created_time;
+					var adress;
+					if(item.place){
+						var place = item.place.name;
+						var city = item.place.location.city;
+						var street = item.place.location.street;
+						adress = place + ", " + street +", " + city;
+					}
+					else{
+						adress = "Pas d'adresse pour cette image";
+					}
+					$.each( item.images, function(a, image) {
+						imageUrl = image.source;
+					});
+					$("." + colonne)
+					.append('<li class="data-2 colonne"><img src="'+imageUrl+'"><span>'+adress+'</span><p>Posté par '+from+'</p><p>'+time+'</p></li>');
 				});
 			},
 			error: function() { alert('Failed!'); },
