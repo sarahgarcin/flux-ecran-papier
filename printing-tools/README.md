@@ -25,3 +25,6 @@ Voir: print-deamon.sh
 Exemple d'un script qui va chercher les images sur une page web donnée et qui en fait un poster
 Voir: https://github.com/raphaelbastide/website-poster
 
+## Python
+Transformer du contenu HTML en PDF:  
+<https://github.com/raphaelbastide/website-poster>
