@@ -1,2 +1,5 @@
-# flux-ecran-papier
-Boîte à outils pour le workshop Flux -> Écran -> Papier à l'ESA Pyrénnées Pau du 15/12/2015 au 18/12/2015
+# Liste d'outils utiles pour le passage Écran -> Papier
+
+- PRINT CSS
+Créer une feuille de style spécifique à l'impression
+<http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/>
