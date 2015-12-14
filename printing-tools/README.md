@@ -1,4 +1,4 @@
-# Liste d'outils utiles pour le passage Écran -> Papier
+# Liste d'outils utiles Écran -> Papier
 
 ##PRINT CSS  
 Créer une feuille de style spécifique à l'impression  
