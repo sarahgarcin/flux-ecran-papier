@@ -22,3 +22,14 @@ Pour utiliser ces scripts vous devez créer une app dans l'API d'Instagram et g�
 - Cliquez sur "Authorize"
 - L'application vous renvoie votre access token, enregistrez le quelque part
 
+
+## Google Maps API
+Pour le script medias-localisation, j'ai utilisé l'API Javascript de Google Maps.  
+<https://developers.google.com/maps/documentation/javascript/>  
+Et notamment le service de geocoding:  
+<https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple>  
+
+Pour utiliser l'API Google vous aurez besoin d'une KEY, qu'il est facile d'obtenir en cliquant sur "GET A KEY" sur la page d'accueil de l'API. 
+Il faudra ensuite intégrer cette clé dans l' index.html, dans l'url au moment où est appelé le script de l'API
+
+
