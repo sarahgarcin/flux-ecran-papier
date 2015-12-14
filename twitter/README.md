@@ -1,5 +1,6 @@
 # Twitter
-Cet exemple est tiré de Twitter Fetcher par Jason Mayes.
+Cet exemple est tiré de Twitter Fetcher par Jason Mayes.  
+<https://github.com/jasonmayes/Twitter-Post-Fetcher>
 Pour le faire fonctionner, suivre les instructions dans le fichier exampleUsage.js
 
 
