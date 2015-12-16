@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Upload images and text</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <label>Sélectionner une image à envoyer</label>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" id="submit-image" value="Envoyer une image" name="submit-image">
+</form>
+	
+<form action="texttojson.php" method="post">
+	<label>Texte</label>
+	<input type="text" name="text" id="text" placeholder="Écrire votre texte ici"/>
+	<input type="submit" id="submit-text" value="Envoyer un texte" name="submit-text"/>
+</form>
+
+</body>
+</html>
