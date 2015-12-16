@@ -1,0 +1,40 @@
+/*
+* Example style!
+* You can do whatever the hell you want on your site :-)
+*/
+
+body {
+  font-family:Arial,"Liberation Sans",sans-serif;
+}
+
+h2 {
+  clear:both;
+}
+
+p, a {
+  font-size:9pt;
+  margin:10px 0 0 0;
+  color:#3d3d3d;
+}
+
+a, a:visited {
+  color:#427fed;
+}
+
+a:hover {
+  color:#82afff;
+}
+
+ul li {
+  list-style:none;
+  margin:5px;
+  padding:5px;
+}
+img{
+  width:200px;
+}
+
+
+.tweet {
+  width:50%;
+}
