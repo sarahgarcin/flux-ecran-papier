@@ -12,11 +12,13 @@ archivebox="archivebox/"
 printinbox="printbox/"
 
 #for step in `find $printinbox -iname "*.pdf" -type f`
-while true
-	do
+while true; do
 		i=$((i+1))
 		wkhtmltopdf "http://google.com" "printbox/test-$i.pdf"
-  	#lpr -P $printer -o media=A4 -o fit-to-page $step
-		#mv -v $step $archivebox # copy in outbox (archives)
+		for step in `find $printinbox -iname "*.pdf" -type f`
+	  do 
+			lpr -P $printer -o media=A4 -o fit-to-page $step
+			mv -v $step $archivebox # copy in outbox (archives)
+		done
 		sleep 10
 done
