@@ -37,8 +37,9 @@ $(document).ready(function(){
     		var cleanTweet = tweetContent.replace(link, "").replace(linkClose, "").replace(span, "").replace(spanClose, "");
     		//onsole.log(cleanTweet);
     		var reducetweet = cleanTweet.split(/\s+/).slice(0,4).join(" ");
-    		console.log(reducetweet);
+    		//console.log(reducetweet);
     		$("#content ul ."+liClass).append("<span>"+reducetweet+" </span>")
+    		console.log($("#content ul ."+liClass).html());
     	});
   	}
 	}
