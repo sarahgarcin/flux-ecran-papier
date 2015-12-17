@@ -42,7 +42,6 @@
 	    curl_setopt_array($feed, $options);
 	    $json = curl_exec($feed);
 	    curl_close($feed);
-	    print_r($json);
 	    return $json;
 	}
 
