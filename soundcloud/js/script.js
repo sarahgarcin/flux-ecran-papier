@@ -2,8 +2,8 @@
 $(document).ready(function(){
 	
 // -------- Variables --------------
-	//entrez votre access token ici
-	var clientID = "6068553e231c872c3a96e9deefff83e4";
+	//entrez votre client ID ici
+	var clientID = "client ID";
 	var tag = "sarah";
 
 	$.ajax({ 

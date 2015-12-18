@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 // -------- Variables --------------
 	//entrez votre access token ici
-	var accessToken = "AIzaSyBIKdAoOQiu8z6Uf19Rl-yuiRiNraOQ6r0";
+	var accessToken = "access token";
 	var tag = "cat";
 
 	$.ajax({ 

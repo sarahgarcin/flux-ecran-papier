@@ -7,10 +7,10 @@
 	 
 	    $url = "https://api.twitter.com/1.1/statuses/update.json";
 	 
-	    $oauth_access_token = "2199230268-y22MYnF1770DueU7nwlk9EAxqsIIGm0sLhOifAj";
-	    $oauth_access_token_secret = "Hb0eRGgiKFoHnElTECZnW3HhomTRFojRzdSEhsfY6xTRG";
-	    $consumer_key = "x9FBl03idQdfJEnpHj5Ej7RPw";
-	    $consumer_secret = "oKuKoAMG5aHEBmwz6U8c7bq9uL78Y1z7mjx2PlPfyaxqVJFUp7";
+	    $oauth_access_token = "";
+	    $oauth_access_token_secret = "";
+	    $consumer_key = "";
+	    $consumer_secret = "";
 	 
 	    $oauth = array( 'oauth_consumer_key' => $consumer_key,
 	                    'oauth_nonce' => rand() . rand(),
